@@ -1,0 +1,63 @@
+{
+  "name": "rsme",
+  "version": "0.1.3",
+  "description": "📘 A simple HTML & PDF resume generator",
+  "keywords": [
+    "resume",
+    "cv",
+    "generator"
+  ],
+  "author": "BΛRT SITΞK <hello@bar.tk>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "./bin/index.js",
+  "bin": {
+    "rsme": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "docs",
+    "src"
+  ],
+  "preferGlobal": true,
+  "repository": "brtstk/resume",
+  "homepage": "https://github.com/brtstk/resume",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.config.js && npm run pdf",
+    "pdf": "./bin/build-pdf.js",
+    "preview": "npm run build && open ./docs/index.html && open ./docs/resume.pdf",
+    "preview:pdf": "npm run build && open ./docs/resume.pdf"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "stylelint-scss": "^3.13.0"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "commander": "^4.0.1",
+    "css-loader": "^3.2.0",
+    "electron-pdf": "^4.0.8",
+    "html-inline-css-webpack-plugin": "^1.8.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "postcss": "^7.0.23",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.0",
+    "shelljs": "^0.8.3",
+    "stylelint": "^12.0.0",
+    "stylelint-config-recommended-scss": "^4.1.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-fix-style-only-entries": "^0.4.0"
+  }
+}
