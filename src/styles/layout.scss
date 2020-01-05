@@ -10,7 +10,9 @@ ul {
 
     &:before {
       content: '•';
-      padding: 0 0.5em 0 0;
+      font-size: 1.75em;
+      padding: 0 0.25em 0 0;
+      vertical-align: middle;
     }
 
     &:last-of-type {
@@ -57,7 +59,7 @@ a {
   width: 21cm;
   margin: 2em auto;
   padding: 0 2.5em;
-  font-size: .8em;
+  font-size: .85em;
   text-align: right;
   text-transform: uppercase;
 
@@ -116,7 +118,7 @@ article {
       display: flex;
 
       .romaji {
-        font-size: 2.5em;
+        font-size: 2.8em;
         line-height: 1em;
         text-transform: uppercase;
         letter-spacing: 0.01em;
@@ -194,6 +196,7 @@ article {
       h2 {
         margin: 0;
         font-size: 0.8em;
+        font-weight: 400;
         line-height: 1.5em;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -202,6 +205,7 @@ article {
       h3 {
         margin: 0;
         font-size: 0.6em;
+        font-weight: 400;
         line-height: 1.5em;
         letter-spacing: 0.1em;
         text-transform: uppercase;
