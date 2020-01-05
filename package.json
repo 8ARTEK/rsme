@@ -24,7 +24,7 @@
   "homepage": "https://github.com/brtstk/resume",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.config.js && npm run pdf && ln -sfn ./docs/resume.html ./docs/index.html",
+    "build": "webpack --config webpack.config.js && npm run pdf && cd docs; ln -sfn resume.html index.html",
     "pdf": "./bin/build-pdf.js",
     "preview": "npm run build && open ./docs/index.html && open ./docs/resume.pdf",
     "preview:pdf": "npm run build && open ./docs/resume.pdf"
