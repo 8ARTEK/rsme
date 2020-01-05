@@ -17,16 +17,14 @@
     "rsme": "./bin/index.js"
   },
   "files": [
-    "bin",
-    "docs",
-    "src"
+    "bin"
   ],
   "preferGlobal": true,
   "repository": "brtstk/resume",
   "homepage": "https://github.com/brtstk/resume",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.config.js && npm run pdf",
+    "build": "webpack --config webpack.config.js && npm run pdf && ln -sfn ./docs/resume.html ./docs/index.html",
     "pdf": "./bin/build-pdf.js",
     "preview": "npm run build && open ./docs/index.html && open ./docs/resume.pdf",
     "preview:pdf": "npm run build && open ./docs/resume.pdf"

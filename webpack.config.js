@@ -17,7 +17,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-      }
+      },
     ]
   },
   plugins: [
@@ -26,7 +26,7 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './src/resume.html',
-      filename: 'index.html'
+      filename: 'resume.html'
       // minify: {
       //     collapseWhitespace: true
       // }

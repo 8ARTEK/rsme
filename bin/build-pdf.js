@@ -6,7 +6,7 @@ const { spawn } = require('child_process');
 
 const child = spawn('node', [
   './node_modules/electron-pdf/cli.js',
-  `${__dirname}/../docs/index.html`,
+  `${__dirname}/../docs/resume.html`,
   './docs/resume.pdf'
 ]);
 
