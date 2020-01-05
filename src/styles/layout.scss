@@ -127,7 +127,7 @@ article {
         font-size: 1.25em;
         font-weight: 900;
         line-height: 1em;
-        letter-spacing: 0.055em;
+        letter-spacing: 0.1em;
       }
     }
 
@@ -233,6 +233,10 @@ article {
         flex-direction: row;
         margin-bottom: 1em;
         border-bottom: 1px solid black;
+
+        h2 {
+          font-weight: 900;
+        }
 
         div:last-of-type {
           text-align: right;
