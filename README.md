@@ -3,6 +3,12 @@
 ---
 
 <p align="center">
+  <strong>
+    🕹 Demo: <a href="https://brtstk.github.io/resume">https://brtstk.github.io/resume</a>
+  </strong>
+</p>
+
+<p align="center">
   <a aria-label="NPM version" href="https://www.npmjs.com/package/rsme">
     <img alt="npm" src="https://img.shields.io/npm/v/rsme?color=005AB2&style=flat-square">
   </a>
@@ -12,12 +18,6 @@
   <a aria-label="NPM downloads" href="https://www.npmjs.com/package/rsme">
     <img alt="npm" src="https://img.shields.io/npm/dt/rsme?color=005AB2&style=flat-square">
   </a>
-</p>
-
-<p align="center">
-  <strong>
-    🕹 Demo: <a href="https://brtstk.github.io/resume">https://brtstk.github.io/resume</a>
-  </strong>
 </p>
 
 ---
