@@ -1,7 +1,5 @@
 [![Resume](.readme/top.png)](https://brtstk.github.io/resume)
 
-A simple HTML + PDF resume generator.
-
 # Demo
 🕹 https://brtstk.github.io/resume
 
