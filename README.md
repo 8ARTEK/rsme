@@ -1,5 +1,7 @@
 [![Resume](.readme/top.png)](https://brtstk.github.io/resume)
 
+---
+
 <p align="center">
   <strong>
     Demo: <a href="https://brtstk.github.io/resume">🕹 https://brtstk.github.io/resume</a>
