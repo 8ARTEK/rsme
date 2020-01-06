@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>
-    Demo: <a href="https://brtstk.github.io/resume">🕹 https://brtstk.github.io/resume</a>
+    Demo: 🕹<a href="https://brtstk.github.io/resume">https://brtstk.github.io/resume</a>
   </strong>
 </p>
 
