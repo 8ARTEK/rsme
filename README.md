@@ -1,4 +1,16 @@
-[![Resume](.readme/top.png)](https://brtstk.github.io/resume)
+[![Resume](.media/header.png)](https://brtstk.github.io/resume)
+
+<p align="center">
+  <a aria-label="NPM version" href="https://www.npmjs.com/package/rsme">
+    <img alt="npm" src="https://img.shields.io/npm/v/rsme">
+  </a>
+  <a aria-label="License" href="https://github.com/brtstk/resume/blob/master/LICENSE">
+    <img alt="GitHub" src="https://img.shields.io/github/license/brtstk/resume">
+  </a>
+  <a aria-label="NPM downloads" href="https://www.npmjs.com/package/rsme">
+    <img alt="npm" src="https://img.shields.io/npm/dt/rsme">
+  </a>
+</p>
 
 ---
 
