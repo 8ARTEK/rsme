@@ -1,6 +1,4 @@
-<p align="center">
 [![Resume](.readme/top.png)](https://brtstk.github.io/resume)
-</p>
 
 A simple HTML + PDF resume generator.
 
