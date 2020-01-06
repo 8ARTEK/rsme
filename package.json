@@ -7,10 +7,19 @@
     "cv",
     "generator"
   ],
-  "author": "BΛRT SITΞK <hello@bar.tk>",
+  "author": {
+    "name": "BΛRT SITΞK",
+    "email": "hello@bar.tk",
+    "web": "https://bar.tk",
+    "twitter": "brtstk"
+  },
   "license": "MIT",
+  "repository": "brtstk/resume",
+  "bugs": {
+    "url": "https://github.com/brtstk/resume/issues"
+  },
   "engines": {
-    "node": ">=10"
+    "node": ">=8.17.0"
   },
   "main": "./bin/index.js",
   "bin": {
@@ -20,7 +29,6 @@
     "bin"
   ],
   "preferGlobal": true,
-  "repository": "brtstk/resume",
   "homepage": "https://github.com/brtstk/resume",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
