@@ -35,7 +35,8 @@
     "build": "cp -Rn ./src-dummy/ ./src/ || true && webpack --config webpack.config.js && npm run pdf && cd docs; ln -sfn resume.html index.html",
     "pdf": "./bin/build-pdf.js",
     "preview": "npm run build && open ./docs/index.html && open ./docs/resume.pdf",
-    "preview:pdf": "npm run build && open ./docs/resume.pdf"
+    "preview:pdf": "npm run build && open ./docs/resume.pdf",
+    "test": ""
   },
   "devDependencies": {
     "eslint": "^6.7.2",
