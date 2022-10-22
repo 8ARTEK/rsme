@@ -1,0 +1,22 @@
+@media print {
+  html,
+  body {
+    background: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    margin: 0;
+    box-shadow: none;
+
+    // Fix to match A4 dimensions on paper
+    size: A4;
+    height: 100%;
+    width: 100%;
+  }
+
+  #pdf-print {
+    display: none;
+  }
+}

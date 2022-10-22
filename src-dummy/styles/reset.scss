@@ -1,0 +1,42 @@
+/* ------------------------------------
+  RESET
+------------------------------------ */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  page-break-after: avoid;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #e1e1e1; /*#005AB2*/
+  -webkit-print-color-adjust: exact;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.page {
+  background: white;
+  position: relative;
+  width: 21cm;
+  height: 29.7cm;
+  padding: 2.5em; /*1.25cm*/
+  box-sizing: border-box;
+  margin: 50px auto;
+  overflow: hidden;
+  box-shadow: 0 0 5px -1px #999;
+}
+
+figure {
+  margin: 0;
+}
+
+// to be changed
+table {
+  margin:0;
+}

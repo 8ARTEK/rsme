@@ -1,0 +1,73 @@
+{
+  "name": "rsme",
+  "version": "0.2.4",
+  "description": "📘 A simple HTML & PDF resume generator",
+  "keywords": [
+    "resume",
+    "cv",
+    "generator"
+  ],
+  "author": {
+    "name": "BΛRT SITΞK",
+    "email": "hello@bartek.jp",
+    "web": "https://bartek.jp",
+    "twitter": "brtstk"
+  },
+  "license": "MIT",
+  "repository": "brtstk/resume",
+  "bugs": {
+    "url": "https://github.com/brtstk/resume/issues"
+  },
+  "engines": {
+    "node": ">=8.17.0"
+  },
+  "main": "./bin/index.js",
+  "bin": {
+    "rsme": "./bin/index.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "preferGlobal": true,
+  "homepage": "https://github.com/brtstk/resume",
+  "scripts": {
+    "start": "cp -Rn ./src-dummy/ ./src/ || true && webpack serve --config webpack.dev.js",
+    "build": "cp -Rn ./src-dummy/ ./src/ || true && webpack --config webpack.config.js && npm run pdf && cd docs; ln -sfn resume.html index.html",
+    "pdf": "./bin/build-pdf.js",
+    "preview": "npm run build && open ./docs/index.html && open ./docs/resume.pdf",
+    "preview:pdf": "npm run build && open ./docs/resume.pdf"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "stylelint-scss": "^4.3.0"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "commander": "^4.0.1",
+    "css-loader": "^3.2.0",
+    "ejs": "^2.1.8",
+    "electron-pdf": "^20.0.0",
+    "file-loader": "^5.0.2",
+    "html-inline-css-webpack-plugin": "^1.8.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^1.3.9",
+    "npm": "^8.19.2",
+    "postcss": "^8.2",
+    "prettier": "^1.19.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "shelljs": "^0.8.3",
+    "stylelint": "^14.14.0",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "webpack": "^5.20.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-remove-empty-scripts": "^1.0.1"
+  }
+}

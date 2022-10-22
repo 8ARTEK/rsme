@@ -1,0 +1,256 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  counter-reset: item;
+
+  li {
+    margin: 0 0 0.3em 0;
+    display: block;
+
+    &:before {
+      content: '•';
+      font-size: 1.75em;
+      padding: 0 0.25em 0 0;
+      vertical-align: middle;
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}
+
+table,
+tbody,
+thead,
+tr,
+td {
+  -webkit-flex: 1;
+  flex: 1;
+}
+table,
+table tr,
+table td {
+  display: -webkit-flex;
+  display: flex;
+}
+table tr {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid black;
+}
+table tr:last-of-type {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: black;
+  /*text-decoration: none;*/
+}
+
+/* ------------------------------------
+  FRAMEWORK
+------------------------------------ */
+
+#pdf-print {
+  width: 21cm;
+  margin: 2em auto;
+  padding: 0 2.5em;
+  font-size: 0.85em;
+  text-align: right;
+  text-transform: uppercase;
+
+  a {
+    color: #777777;
+  }
+}
+
+article {
+  display: flex;
+  width: 100%;
+
+  > header {
+    width: 100%;
+  }
+
+  > section {
+    width: 100%;
+  }
+}
+
+.page {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  .spacer {
+    flex-grow: 1;
+  }
+
+  // Top header
+  > header {
+    align-items: center !important;
+    margin-bottom: 2.5em !important;
+
+    .photo {
+      height: 8.5em;
+      width: 8.5em;
+      background-size: cover;
+      border-radius: 99em;
+      margin: 0 1.5em 0 0;
+    }
+
+    .logo {
+      margin-top: 0.3em;
+      width: 5.5em;
+    }
+
+    .name {
+      display: flex;
+
+      .romaji {
+        font-size: 2.8em;
+        line-height: 1em;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+      }
+      .kana {
+        font-size: 1.25em;
+        font-weight: 900;
+        line-height: 1em;
+        letter-spacing: 0.1em;
+      }
+    }
+
+    .first-name {
+      margin-right: 1rem;
+    }
+  }
+
+  // Page footer
+  > footer {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+  }
+
+  header,
+  article,
+  section.module {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 0 1em 0;
+  }
+
+  .info {
+    display: block;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-bottom: 2em;
+
+    font-size: 0.8em;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    text-transform: none;
+    text-align: left;
+  }
+
+  // Actual module
+  .module {
+    header {
+      padding: 1em 0;
+      border-top: 2px solid black;
+      justify-content: space-between;
+
+      h2 {
+        margin: 0;
+        font-size: 0.8em;
+        font-weight: 400;
+        line-height: 1.5em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 0.6em;
+        font-weight: 400;
+        line-height: 1.5em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+    }
+
+    > aside {
+      width: 8.5em;
+      margin-right: 1.5em;
+      flex: none;
+      // flex: 1 0 auto;
+
+      header {
+        flex-direction: column;
+      }
+    }
+
+    > section {
+      flex-direction: column;
+      align-items: stretch;
+      margin: 0;
+      flex-grow: 1;
+
+      header {
+        flex-direction: row;
+        margin-bottom: 1em;
+        border-bottom: 1px solid black;
+
+        h2 {
+          font-weight: 900;
+        }
+
+        div:last-of-type {
+          text-align: right;
+        }
+      }
+
+      > section {
+        margin: 0;
+        font-size: 0.75em;
+        line-height: 1.5em;
+        letter-spacing: 0.05em;
+        text-transform: none;
+        text-align: left;
+      }
+    }
+  }
+
+  .tabular {
+    > section.module {
+      margin-bottom: 0;
+    }
+
+    > section.module header {
+      margin-bottom: 0;
+      border-top: 1px solid black;
+      border-bottom: 0;
+    }
+
+    > section.module:first-of-type header {
+      border-top: 2px solid black;
+    }
+  }
+}
