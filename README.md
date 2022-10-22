@@ -11,16 +11,6 @@
 </p>
 
 <div align="center">
-  <style>
-    table.logo, .logo tr, .logo td {
-      border: 0!important;
-      font-weight: bold;
-      text-align: center;
-      padding-top: 0;
-      padding-bottom: 0;
-      font-size: 1.4em;
-    }
-  </style>
   <table class="logo">
     <tr>
       <td>.</td>
